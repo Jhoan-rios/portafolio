@@ -1,0 +1,22 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+body
+{
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+#table
+{
+    width: 1000px;
+    border: 1 black;
+}
+#titulo
+{
+    margin-top: 20px;
+}
+#proyecto
+{
+    margin-top: 50px
+}
