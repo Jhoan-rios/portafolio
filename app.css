@@ -1,0 +1,95 @@
+.ligth{
+    background-color: #e4e2dd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ligth .cartarg{
+    width: 700px; 
+    height: 430px; 
+    background-color: #e4e2dd;
+}
+
+
+.dark{
+    background-color: #2B2B2B;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dark .cartarg{
+    width: 700px; 
+    height: 430px; 
+    background-color: #2B2B2B;
+    color: #e4e2dd;
+}
+.dark .presentacion{
+    font-size: 60px;
+    font-family: 'Staatliches', sans-serif;
+    color: #ff89a9;
+}
+.dark .presentacion2{
+    font-size: 60px;
+    font-family: 'Staatliches', sans-serif;
+    margin-top: 200px;
+    color: #ff89a9;
+}
+.dark .footerg{
+    background-color: #2B2B2B;
+    color: #e4e2dd;
+}
+.dark .card-body{
+    background-color: #3c3c3c;
+}
+.dark .card-title{
+    color: #ff89a9;
+}
+.dark .card-text{
+    color: #e4e2dd;
+}
+.dark .logotitle{
+    color: #ff89a9;
+}
+
+
+
+
+
+
+nav{
+    margin: 0px;
+    padding: 0px;
+
+}
+.nav-inicio2{
+    margin-top: 800px;
+
+}
+.holabb{
+    width: 100%; 
+}
+
+.junior-tu-papa{
+    margin-top: 6%;
+}
+.presentacion{
+    font-size: 60px;
+    font-family: 'Staatliches', sans-serif;
+}
+.texto{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 18px;
+}
+.carta-proyecto{
+    margin-top: 300px;
+    margin-bottom: 60px;
+}
+.card-img-top{
+    height: 200px; 
+    width: 300px;
+}
+.presentacion2{
+    font-size: 60px;
+    font-family: 'Staatliches', sans-serif;
+    margin-top: 200px;
+}
+.carta-proyecto1{
+    margin-top: 70px;
+
+}
