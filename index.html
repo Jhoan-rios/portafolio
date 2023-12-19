@@ -3,65 +3,306 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Portafolio Jhoan Rios</title>
 </head>
-<body>
-<center>
+<body class="ligth" id="body">
+    <div class="holabb fixed-top">
 
-<div id="titulo">
-    <h1>PORTAFOLIO</h1>
-    <br>
-    <h2>Jhoan Andres Rios Morales</h2>
-    <br>
-    <h2>3B</h2>
-</div>
 
-<div id="proyecto">
-    <table id="table" >
-        <tr>
-            <td style="width: 333px;">
-                <a href="https://jhoan-rios.github.io/ejercicios-riwi/ejercicio1.html" target="_blank"><img src="imagenes/login.png" alt=""></a>
-            </td>
-            <td style="width: 333px;">
-                <a href="https://jhoan-rios.github.io/hojadevida/hdv.html" target="_blank"><img src="imagenes/hojadevida.png" alt=""></a>
-            </td>
-            <td style="width: 333px;">
-                <a href="https://jhoan-rios.github.io/instagram/instagram.html" target="_blank"><img src="imagenes/instagram.png" alt=""></a>
-            </td>
-        </tr>
-        <tr style="text-align: center;">
-            <td  style="width: 280px;">Este es un proyecto que se trata de la creacion de un login, en el cual puedes ingresar tu nombre, contraseña y entrar.</td>
-            <td  style="width: 280px;">Esta es una hoja de vida escrita con codigo en html</td>
-            <td   style="width: 280px;">Esto es un ejemplo de como se veria la pagina del perfil en instagram</td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://jhoan-rios.github.io/ejercicios-riwi/ejercicio1.html" target="_blank">Entrar al proyecto</a>
-            </td>
-            <td>
-                <a href="https://jhoan-rios.github.io/hojadevida/hdv.html" target="_blank">Entrar al proyecto</a>
-            </td>
-            <td>
-                <a href="https://jhoan-rios.github.io/instagram/instagram.html" target="_blank">Entrar al proyecto</a>
-            </td> 
-        </tr>
-        
-        <tr>
-            <td>
-                <a target="_blank" href="https://jhoan-rios.github.io/listas/index.html"><img src="imagenes/listas.png" alt=""></a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Este proyecto son listas de usuarios, productos, crear, productos y mucho más</p>
-            </td>
-        </tr>
-        <tr>
-            <td><a href="https://jhoan-rios.github.io/listas/index.html" target="_blank">Entrar al proyecto</a></td>
-        </tr>
-    </table>
-</div>
-</center>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand logotitle" href="#">Jhoan Rios</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="sobre_mi">Sobre mi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#proyectos" id="proyectos1">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto" id="contacto1">Contacto</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="idioma">
+                      Idioma
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" onclick="español()" href="#" id="spanish">Español</a></li>
+                      <li><a class="dropdown-item" onclick="ingles()" href="#" id="english">Ingles</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="tema">
+                      Tema
+                    </a>
+                    <ul class="dropdown-menu" id="seleccionar_color">
+                      <li><a class="dropdown-item" onclick="ligth()" href="#" id="claro">Claro</a></li>
+                      <li><a class="dropdown-item" onclick="dark()" href="#" id="oscuro">Oscuro</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    </div>
+
+
+    <section class="junior-tu-papa">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class=" carta1 cartarg">
+                        <div>
+                          <h1 class="card-title presentacion" id="bienvenida">Bienvenidos, Yo soy Jhoan</h1>
+                          <h6 class="card-subtitle mb-2 ticard-title-body-secondary" id="subtitle">Desarrollador de este portafolio</h6>
+                          <br>
+                          <p class="card-text ticard-titleo" id="texto1">Soy un programador en proceso que ya cuento con una técnica en desarrollo de software, tengo unas bases de inglés y sigo estudiando para ser mejor cada día. soy muy sociable, muy creativo y cuento con una experiencia en creación de distintos proyectos, puedo adaptarme a cualquier equipo de trabajo y funciono muy bien bajo presión, puedo ser la persona ideal que tu empresa o proyecto necesita. Aquí puedes ver mi portafolio anterior para conocer mi proceso.</p>
+                          <br>
+                          <a href="https://jhoan-rios.github.io/portafolio/" class="card-link" id="link">Portafolio anterior</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4">
+                    <span id="logo"><img src="./imagenes/jhoan/2.png" style="width: 500px;" alt="..."></span>     
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="presentacion position-absolute start-50 translate-middle-x" style="margin-top: 80px;" id="proyectos">Proyectos</h1>
+            </div>
+            <div class="col-md-3">
+                <div class="card carta-proyecto" style="width: 300px;">
+                    <a href="https://jhoan-rios.github.io/ejercicios-riwi/ejercicio1.html" target="_blank"><img src="./imagenes/login.png"  class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                      <h4 class="card-title">Login</h4>
+                      <p class="card-text" id="proyect1">Este fue mi primer proyecto que desarrolle en Riwi</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card carta-proyecto" style="width: 300px;">
+                    <a href="https://jhoan-rios.github.io/hojadevida/hdv.html" target="_blank"><img src="./imagenes/hojadevida.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                      <h4 class="card-title">Hoja de vida</h4>
+                      <p class="card-text" id="proyect2">Hoja de vida utilizando html y css</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card carta-proyecto" style="width: 18rem;">
+                    <a href="https://jhoan-rios.github.io/instagram/instagram.html" target="_blank"><img src="./imagenes/instagram.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                      <h4 class="card-title">Instagram</h4>
+                      <p class="card-text" id="proyect3">Perfil de instagram utilizando html y css</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card carta-proyecto" style="width: 18rem;">
+                    <a href="https://jhoan-rios.github.io/listas/index.html" target="_blank"><img src="./imagenes/listas.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                      <h4 class="card-title">Listas</h4>
+                      <p class="card-text" id="proyect4">Una lista de compras que tiene distintas funciones</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <a href="https://jhoan-rios.github.io/panaderia/index.html" target="_blank"><img src="imagenes/panaderia.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                      <h4 class="card-title">Proyecto panaderia</h4>
+                    <p class="card-text" id="proyect5">Proyecto grupal en la que hicimos una pagina de una panaderia</p>
+                  </div>
+                </div>
+          </div>
+            <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <a href="https://jhoan-rios.github.io/calculadora/" target="_blank"><img src="./imagenes/calculadora.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                      <h4 class="card-title">Calculadora</h4>
+                    <p class="card-text" id="proyect6">Creación de una calculadora utilizando html, css y javascript</p>
+                  </div>
+                </div>
+          </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <a href="https://jhoan-rios.github.io/base-de-datos/" target="_blank"><img src="imagenes/base-de-datos.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Base de datos</h4>
+                      <p class="card-text" id="proyect7">Creacion de tablas que imprime informacion</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <a href="https://jhoan-rios.github.io/macondo/macondo.html" target="_blank"><img src="imagenes/macondo.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Viaje a Macondo</h4>
+                      <p class="card-text" id="proyect8">Creación proyecto Macondo</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card carta-proyecto1" style="width: 18rem;">
+                    <a href="https://jhoan-rios.github.io/kfc/" target="_blank"><img src="imagenes/kfc.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Kfc</h4>
+                      <p class="card-text" id="proyect9">Pagina de kfc replicada que cambia de tema y de idioma</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card carta-proyecto1" style="width: 18rem;">
+                  <a href="https://jhoan-rios.github.io/inisio-de-sesion/" target="_blank"><img src="imagenes/inisio-sesion.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                      <h4 class="card-title">Inicio de sesión</h4>
+                    <p class="card-text" id="proyect10" >Inicio de sesión funcional con Perfil</p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card carta-proyecto1" style="width: 18rem;">
+                <a href="https://jhoan-rios.github.io/hogwarts/" target="_blank"><img src="imagenes/hogwarts.png" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h4 class="card-title">Hogwarts</h4>
+                  <p class="card-text" id="proyect11">Creacion de proyecto Hogwarts</p>
+                </div>
+              </div>
+        </div>
+            
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12" >
+                <h1 class="presentacion2 position-absolute start-50 translate-middle-x" id="contacto">Contacto</h1>
+            </div>
+        </div>
+
+    </section>
+
+
+<footer class="text-center text-lg-start bg-body-tertiary text-muted footerg"  style="margin-top: 400px; background-color: #2B2B2B; ">
+
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom footerg">
+
+    </section>
+
+
+    <section class="footerg">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Jhoan Rios
+            </h6>
+            <p id="footer1">
+              Ponte en contacto conmigo si deseas trabajar conmigo o si deseas conocer mas acerca de mi.
+            </p>
+          </div>
+
+  
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ">
+
+            <h6 class="text-uppercase fw-bold mb-4" id="habilidades">
+              Habilidades
+            </h6>
+            <p>
+              <a href="#!" class="text-reset" id="sitios">Sitios web</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset" id="bases">Bases de datos</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset" id="lenguajes">Lenguajes Backend</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset" id="lenguajes2">Lenguajes Frontend</a>
+            </p>
+          </div>
+
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <h6 class="text-uppercase fw-bold mb-4" id="redes">
+              Redes sociales
+            </h6>
+            <p>
+              <a href="https://www.facebook.com/jhoan.riosmorales12/" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+              <a href="https://www.facebook.com/jhoan.riosmorales12/" class="text-reset">Facebook</a>
+            </p>
+            <p>
+              <a href="https://www.instagram.com/jhoan__rios/" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.instagram.com/jhoan__rios/" class="text-reset">Instagram</a>
+            </p>
+            <p>
+              <a href="https://api.whatsapp.com/send?phone=573002536925&text=Hola%20Jhoan%2C%20estoy%20interesado%20en%20tus%20servicios!%20" class="me-4 text-reset">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=573002536925&text=Hola%20Jhoan%2C%20estoy%20interesado%20en%20tus%20servicios!%20" class="text-reset">Whatsap</a>
+            </p>
+            <p>
+              <a href="https://github.com/Jhoan-rios" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://github.com/Jhoan-rios" class="text-reset">Github</a>
+            </p>
+          </div>
+
+  
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4" id="contacto2">Contacto</h6>
+            <p><i class="fas fa-home me-3"></i>Medellín, Colombia</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              Jhoanriosmorales@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i>+57 3002536925</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  
+
+    <div class="text-center p-4 footerg">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="#!">JhoanRios.com</a>
+    </div>
+
+  </footer>
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
